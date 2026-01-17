@@ -1,0 +1,8 @@
+{
+  "coffees": [
+    "Espresso",
+    "Cappuccino",
+    "Americano"
+  ],
+  "promoCoffee": "Mocha"
+}
