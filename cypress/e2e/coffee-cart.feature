@@ -3,8 +3,8 @@
 
 Funcionalidade: Compra de café no Coffee Cart
   Como um visitante do site
-  Ele deseja selecionar cafés
-  Para finalizar a compra com sucesso
+  Quero comprar cafés
+  Para finalizar a compra com sucesso 
 
   Cenario: Finalizar compra com sucesso
     Dado que o visitante acessa o Coffee Cart

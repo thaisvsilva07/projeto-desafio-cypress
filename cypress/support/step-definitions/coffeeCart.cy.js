@@ -1,7 +1,6 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 
 import HomePage from '../pages/home.page'
-import CartPage from '../pages/cart.page'
 import CheckoutPage from '../pages/checkout.page'
 
 const precosCafe = {
@@ -49,17 +48,17 @@ Then('valida o total correto no carrinho', () => {
     return total + precosCafe[cafe]
   }, 0)
 
-  CartPage.validarTotal(totalEsperado.toFixed(2))
+  HomePage.validarTotal(totalEsperado.toFixed(2))
 })
 
 And('remove um item do carrinho', () => {
-  CartPage.abrirPreviewCarrinho()
-  CartPage.removerPrimeiroItem()
+  HomePage.abrirPreviewCarrinho()
+  HomePage.removerPrimeiroItem()
   cafesSelecionados.shift()
 })
 
 And('realiza o checkout', () => {
-  CartPage.abrirCheckout()
+  HomePage.abrirCheckout()
 
   CheckoutPage.validarTelaCheckout()
   CheckoutPage.preencherNome(Cypress.env('name'))
